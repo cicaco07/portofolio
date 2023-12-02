@@ -1,8 +1,8 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 
-export default function Document() {
+export default function Document({darkMode}) {
   return (
-    <Html lang="en">
+    <Html lang="en" style={{scrollBehavior:'smooth'}} >
       <Head />
       <body>
         <Main />

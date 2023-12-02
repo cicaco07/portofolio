@@ -14,5 +14,35 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('daisyui')],
+  darkMode: 'class',
+  daisyui: {
+    themes: [
+      {
+        night: {
+          ...require("daisyui/src/theming/themes")["night"],
+          ".text-common": {
+            "color": "#ffffff",
+          },
+          ".common": {
+            "color": "#ffffff",
+          },
+        },
+        retro: {
+          ...require("daisyui/src/theming/themes")["retro"],
+          ".text-common": {
+            "color": "#000000",
+          },
+          ".common": {
+            "color": "#000000",
+          },
+        }
+      },
+      "light",
+      "dark",
+      "cupcake",
+      "synthwave",
+      "garden",
+    ],
+  }
 }
