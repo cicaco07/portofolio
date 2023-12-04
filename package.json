@@ -11,7 +11,7 @@
   "dependencies": {
     "@headlessui/react": "^1.7.17",
     "font-awesome": "^4.7.0",
-    "framer-motion": "^10.16.9",
+    "framer-motion": "^10.16.12",
     "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18",
