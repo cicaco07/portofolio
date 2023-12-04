@@ -5,12 +5,12 @@ import { motion } from 'framer-motion'
 const Projects = () => {
   return (
     <motion.section className='py-20' id='projects'
-    initial={{ y: 50, opacity: 0 }}
-    whileInView={{ y: 0, opacity: 1 }}
-    transition={{ duration: 1 }}
+      initial={{ y: 50, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1 }}
     >
       <h1 className='text-center py-10 font-bold text-3xl md:text-5xl'>🔥Projects</h1>
-      <div className='flex flex-wrap justify-center pt-10 gap-10'>
+      <div className='flex flex-wrap md:flex-row justify-center pt-10 gap-10'>
         <motion.div
           className='w-full max-w-lg mx-4 md:mx-0 sm:max-w-xl md:max-w-2xl h-full bg-accent rounded-xl'
           initial={{ opacity: 0 }}
@@ -157,6 +157,97 @@ const Projects = () => {
                     <Image src="/icons/icons8-tailwind-css-240.png" alt="" width="50" height="50" className=''/>
                     <Image src="/icons/PHP-logo.png" alt="" width="50" height="50" className=''/>
                     <Image src="/icons/icons8-figma-240.png" alt="" width="50" height="50" className=''/>
+                  </div>
+                  <div className="modal-action">
+                    <form method="dialog">
+                      <button className="btn btn-secondary">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+          </div>
+        </motion.div>
+        <motion.div
+          className='w-full max-w-lg mx-4 md:mx-0 sm:max-w-xl md:max-w-2xl h-full bg-accent rounded-xl mb-4 md:mb-0'
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2 }}
+        >
+          <div className='m-6 justify-center flex'>
+            <Image 
+              src="/image/project2-1.jpg"
+              width={610}
+              height={400}
+              alt=""
+            />
+          </div>
+          <div className='mx-8 text-common'>
+            <h1 className='font-bold text-xl md:text-2xl pb-4'>Niagahoster Clone App</h1>
+            <p className='text-justify text-sm md:text-lg'>
+            This landing page created using HTML, CSS and Javascript only.
+            This landing page is designed and developed in such a way as to provide information 
+            in the form of destinations, services and contacts. This design applies Desktop First 
+            Design, namely focusing the user interface on the desktop display. This page supports 
+            responsive display so that it can be accessed on mobile devices without destroying the main display design.
+            </p>
+          </div>
+          <div className='flex justify-end m-6'>
+            <button className="btn btn-secondary" onClick={()=>document.getElementById('my_modal_2').showModal()}>Details</button>
+              <dialog id="my_modal_2" className="modal">
+                <div className="modal-box w-11/12 max-w-5xl">
+                  <h3 className="font-bold text-xl md:text-2xl">My Bengkel App</h3>
+                  <p className="py-4 text-sm md:text-lg text-justify">
+                  This landing page created using HTML, CSS and Javascript only.
+                  This landing page is designed and developed in such a way as to provide information 
+                  in the form of destinations, services and contacts. This design applies Desktop First 
+                  Design, namely focusing the user interface on the desktop display. This page supports 
+                  responsive display so that it can be accessed on mobile devices without destroying the main display design.</p>
+                  <h3 className="font-bold text-xl my-4">Feature I Worked On: </h3>
+                  <li className='text-sm md:text-lg text-justify'>
+                    Feature section: The use of this section feature is to display the features and benefits that customers will 
+                    get after using this Niagabooster. Apart from that, there are explanatory reasons for each feature which are explained briefly.
+                  </li>
+                  <h3 className="font-bold text-xl my-4">Click image to enlarge : </h3>
+                  <div className='flex flex-wrap gap-4'>
+                    <Image 
+                      src="/image/project2-3.jpg" 
+                      alt="" 
+                      width="100" 
+                      height="75" 
+                      className='' 
+                      onClick={()=>document.getElementById('modal_8').showModal()}
+                    />
+                    <dialog id="modal_8" className="modal">
+                      <div className="modal-box w-11/12 max-w-5xl flex justify-center">
+                        <form method="dialog">
+                          <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                        </form>
+                        <Image src="/image/project2-1.jpg" alt="" width="800" height="300" className='pt-10'/>
+                      </div>
+                    </dialog>
+                    <Image 
+                      src="/image/project2-2.jpg" 
+                      alt="" 
+                      width="100" 
+                      height="50" 
+                      className='' 
+                      onClick={()=>document.getElementById('modal_9').showModal()}
+                    />
+                    <dialog id="modal_9" className="modal">
+                      <div className="modal-box w-11/12 max-w-5xl flex justify-center">
+                        <form method="dialog">
+                          <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                        </form>
+                        <Image src="/image/project2-2.jpg" alt="" width="1000" height="500" className='pt-10'/>
+                      </div>
+                    </dialog>
+                    
+                  </div>
+                  <h3 className="font-bold text-xl my-4">Language and tools: </h3>
+                  <div className='flex gap-6'>
+                    <Image src="/icons/icons8-html-240.png" alt="" width="50" height="50" className=''/>
+                    <Image src="/icons/icons8-css-240.png" alt="" width="50" height="50" className=''/>
+                    <Image src="/icons/icons8-javascript-240.png" alt="" width="50" height="50" className=''/>
                   </div>
                   <div className="modal-action">
                     <form method="dialog">

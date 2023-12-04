@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 
 const Button = () => {
   const handleDownload = () => {
-    const pdfUrl = '/pdf/User Manual.pdf'; 
+    const pdfUrl = '/pdf/CV_Aryo.pdf'; 
 
     const link = document.createElement('a');
     link.href = pdfUrl;
